@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINER MOTION</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Seymour+One&display=swap" rel="style.css">
+
+
+
+</head>
+
+<body>
+    <h1 id="head">“ Linear Motion ” Calculator</h1><br>
+    <div class="Box_input">
+        <p id="d">displacement</p>
+        <p id="a">acceleration</p>
+        <p id="f">final Velocity</p>
+        <p id="i">initial Velocity</p>
+        <p id="t">time</p>
+        <input id="displacement" type="number" placeholder="ระยะทาง(m)">
+        <input id="acceleration" type="number" placeholder="ความเร่ง(m/s²)">
+        <input id="final_Velocity" type="number" placeholder="ความเร็วปลาย(m/s)">
+        <input id="initial_Velocity" type="number" placeholder="ความเร็วต้น(m/s)">
+        <input id="time" type="number" placeholder="เวลา(s)">
+        <select id="find">
+            <option value="">find</option>
+            <option value="s">s</option>
+            <option value="a">a</option>
+            <option value="v">v</option>
+            <option value="u">u</option>
+            <option value="t">t</option>
+        </select>
+        <div id="shadow_button"></div>
+        <button id="button" onclick="check_input(
+        document.getElementById('displacement').value,
+        document.getElementById('acceleration').value,
+        document.getElementById('final_Velocity').value,
+        document.getElementById('initial_Velocity').value,
+        document.getElementById('time').value
+      )">Enter</button>
+    </div>
+    <p id="Formula">Formula</p>
+    <div id="sol"></div>
+
+    <p id="Answer">Answer </p>
+    <div id="answer"></div>
+
+    <div id="shadow_input"></div>
+    <div id="borders_Formula"></div>
+    <div id="shadow_Formula"></div>
+    <div id="borders_Answer"></div>
+    <div id="shadow_Answer"></div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
